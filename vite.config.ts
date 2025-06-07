@@ -18,5 +18,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve("./dist/public"),
     emptyOutDir: true,
+    chunkSizeWarningLimit: 1000, // Đặt giới hạn cảnh báo kích thước chunk lên 1000 KB (1MB)
   },
 });
+
